@@ -3,10 +3,8 @@ from typing import Optional
 
 from fastapi import FastAPI, HTTPException
 
-from gh_issue_pull.classes import convert_swedataset_item_to_entry
-from gh_issue_pull.helpers import fetch_unused_issue, pull_all_swebench_entries, SWEBENCH_DB_PATH, obfuscate
-from gh_issue_pull.swebench_dataset import SWEDataset
-
+from classes import convert_swedataset_item_to_entry
+from swebench_dataset import SWEDataset
 
 dataset: Optional[SWEDataset] = None
 
